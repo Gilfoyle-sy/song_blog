@@ -4,7 +4,8 @@ import { sidebar } from './configSidebar.js'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Song Blog",
+  base: '/song_blog/',
+  title: "song_blog",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -27,6 +28,4 @@ export default defineConfig({
     }
   },
 
-  base: '/song_blog/',
-  title: 'song_blog',  // 这里将会影响之后生成的根路
 })
