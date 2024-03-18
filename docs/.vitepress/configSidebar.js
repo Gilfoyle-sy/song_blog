@@ -1,31 +1,8 @@
 export const sidebar = {
   '/column/ClassCSS/': [
-    {
-      text: '菜单一',
-      items: [
-        {
-          text: 'flex相关',
-          link: '/column/ClassCSS/001_flex'
-        },
-        {
-          text: '响应式',
-          link: '/column/ClassCSS/002_responsive'
-        }
-      ]
-    },
-    {
-      text: '菜单二',
-      items: [
-        {
-          text: '测试3',
-          link: '/column/ClassCSS/001_flex'
-        },
-        {
-          text: '测试4',
-          link: '/column/ClassCSS/002_responsive'
-        }
-      ]
-    }
+    { text: 'flex', link: '/column/ClassCSS/flex' },
+    { text: '尺寸', link: '/column/ClassCSS/size' },
+    { text: 'sass', link: '/column/ClassCSS/sass' },
   ],
   '/column/ClassJS/': [
     {
@@ -45,7 +22,9 @@ export const sidebar = {
           link: '/column/ClassJS/002_Object/api.md'
         }
       ]
-    }
+    },
+    { text: '垃圾回收机制', link: '/column/ClassJS/GC' },
+
   ],
 
 }
