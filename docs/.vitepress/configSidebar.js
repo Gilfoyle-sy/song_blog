@@ -24,7 +24,18 @@ export const sidebar = {
       ]
     },
     { text: '垃圾回收机制', link: '/column/ClassJS/GC' },
+    { text: 'Babel&PolyFill', link: '/column/ClassJS/Babel&Polyfill' },
 
+  ],
+  '/column/ClassDevelop/': [
+    { text: '前端工程化', link: '/column/ClassDevelop/Engineering' },
+    { text: '白屏问题', link: '/column/ClassDevelop/WhiteScreen' },
+    { text: 'RESTful', link: '/column/ClassDevelop/RESTful' },
+    { text: '埋点', link: '/column/ClassDevelop/EventTracking' },
+    { text: 'npm&yarn&pnpm', link: '/column/ClassDevelop/Npm&Yarn&Pnpm' },
+    { text: 'nvm', link: '/column/ClassDevelop/Nvm' },
+    { text: 'nrm', link: '/column/ClassDevelop/Nrm' },
+    { text: 'git', link: '/column/ClassDevelop/Git' },
   ],
 
 }

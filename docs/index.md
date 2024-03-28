@@ -30,9 +30,3 @@ features:
     icon: 🎮
     details: Dota2,Rimworld,Stellaris
 ---
-
-<script setup>
-import home from './components/test.vue';
-</script>
-
-<home />
