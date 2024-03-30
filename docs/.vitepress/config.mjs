@@ -5,8 +5,8 @@ import { sidebar } from './configSidebar.js'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/song_blog/',
-  title: "song_blog",
-  description: "A VitePress Site",
+  title: "个人博客",
+  description: "一个基于vitepress的个人博客站点",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav,
@@ -14,10 +14,10 @@ export default defineConfig({
     sidebar: sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Gilfoyle-sy' }
     ],
 
-    logo: '/logo1.png',
+    logo: '/ball.webp',
 
     outline: {
       level: [2, 6],

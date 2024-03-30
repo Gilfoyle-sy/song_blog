@@ -19,7 +19,7 @@
 5. 转义字符必须在 text 中使用，并且 decode 默认是 false，设置为 true 才能生效
 
    ```html
-   <text decode="true ">></text>
+   <text decode="true"></text>
    ```
 
 ## 与 uniapp 对比

@@ -17,5 +17,5 @@ export const nav = [
     ]
   },
 
-  { text: '关于我', link: '/column/ClassAbout/' },
+  { text: '关于我', link: '/about/' },
 ]
