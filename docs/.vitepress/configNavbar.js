@@ -7,6 +7,7 @@ export const nav = [
       { text: 'JS', link: '/column/ClassJS/' },
       { text: 'VUE', link: '/column/ClassVue/' },
       { text: '开发', link: '/column/ClassDevelop/' },
+      { text: 'CI/CD', link: '/column/ClassCI&CD/' },
       { text: '微信小程序开发', link: '/column/ClassMpWechat/' },
       { text: '团队建设', link: '/column/ClassTeam/' },
     ]

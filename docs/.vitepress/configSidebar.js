@@ -37,5 +37,9 @@ export const sidebar = {
     { text: 'nrm', link: '/column/ClassDevelop/Nrm' },
     { text: 'git', link: '/column/ClassDevelop/Git' },
   ],
+  '/column/ClassCI&CD/': [
+    { text: 'Jenkins', link: '/column/ClassCI&CD/Jenkins/' },
+    { text: '云效', link: '/column/ClassCI&CD/YunXiao/' },
+  ]
 
 }
