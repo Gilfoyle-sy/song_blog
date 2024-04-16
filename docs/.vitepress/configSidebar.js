@@ -25,6 +25,7 @@ export const sidebar = {
     },
     { text: '垃圾回收机制', link: '/column/ClassJS/GC' },
     { text: 'Babel&PolyFill', link: '/column/ClassJS/Babel&Polyfill' },
+    { text: 'Proxy', link: '/column/ClassJS/Proxy' },
 
   ],
   '/column/ClassDevelop/': [

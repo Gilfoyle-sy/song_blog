@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = {
+        name: 'sy',
+
+        other: {
+          age: 18
+        }
+      }
+
+      const isObject = (val) => val !== null && typeof val === 'object'
+      const hasOwn = (val, key) => hasOwnProperty.call(val, key)
+
+      function createGetter() {
+        return function (target, prop, receiver) {
+          const res = Reflect.get(target, prop, receiver)
+          console.log('触发get')
+          if (isObject(res)) {
+            return reactive(res)
+          }
+          return res
+        }
+      }
+
+      function createSetter() {
+        return function (target, prop, value, receiver) {
+          const oldVal = target[prop]
+          const hasKey = hasOwn(target, prop)
+          const res = Reflect.set(target, prop, value, receiver)
+
+          // 判断当前 key 是否已经存在，不存在的话表示为新增的 key ，后续 Vue “标记”新的值使它其成为响应式
+          // if (!hadKey) {
+          //   // trigger(target, 'add' /* ADD */, key, value);
+          // } else if (hasChanged(value, oldValue)) {
+          //   // trigger(target, 'set' /* SET */, key, value, oldValue);
+          // }
+
+          console.log('触发set')
+
+          return res
+        }
+      }
+
+      const get = createGetter()
+      const set = createSetter()
+
+      const mutableHandlers = { get, set }
+
+      function reactive(target) {
+        return createReactiveObject(target, mutableHandlers)
+      }
+      // 创建一个响应式对象
+      function createReactiveObject(target, baseHandlers) {
+        const proxy = new Proxy(target, baseHandlers)
+        return proxy
+      }
+
+      // let ax = reactive(a)
+
+      // // console.log(ax.name)
+      // ax.other.age = '123123'
+      // console.log(ax)
+      // console.log(ax.other.age)
+
+      // let b = ['1', '2', '3']
+
+      // let bp = reactive(b)
+
+      // bp.push('4')
+      // console.log(bp)
+
+      let c = [1, 2, 3, 4]
+      let cp = new Proxy(c, {
+        get: function (target, prop, receiver) {
+          console.log('get', prop)
+          return Reflect.get(target, prop, receiver)
+        },
+        set: function (target, prop, value, receiver) {
+          console.log('set', prop)
+          return Reflect.set(target, prop, value, receiver)
+        }
+      })
+
+      console.log(cp)
+      cp.push(6)
+      // cp.splice(1, 0)
+      // cp.push(6)
+      // cp.push(6)
+      // cp.push(6)
+      // cp[1] = 'asdasd'
+
+      // console.log(cp)
+    </script>
+  </body>
+</html>
