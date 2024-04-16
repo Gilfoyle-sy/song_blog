@@ -8,10 +8,10 @@ export const sidebar = {
     {
       text: '数组',
       items: [
-        {
-          text: '常用api',
-          link: '/column/ClassJS/001_Array/api.md'
-        }
+        { text: '常用api', link: '/column/ClassJS/001_Array/api.md' },
+        { text: '判断数组', link: '/column/ClassJS/001_Array/isArray.md' },
+        { text: '稀疏数组', link: '/column/ClassJS/001_Array/isSparseArray.md' },
+        { text: '数组去重', link: '/column/ClassJS/001_Array/uniqueArray.md' }
       ]
     },
     {
@@ -38,6 +38,7 @@ export const sidebar = {
     { text: 'git', link: '/column/ClassDevelop/Git' },
   ],
   '/column/ClassCI&CD/': [
+    { text: 'CI/CD', link: '/column/ClassCI&CD/' },
     { text: 'Jenkins', link: '/column/ClassCI&CD/Jenkins/' },
     { text: '云效', link: '/column/ClassCI&CD/YunXiao/' },
   ]
