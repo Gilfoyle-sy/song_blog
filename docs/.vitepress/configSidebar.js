@@ -42,6 +42,9 @@ export const sidebar = {
     { text: 'CI/CD', link: '/column/ClassCI&CD/' },
     { text: 'Jenkins', link: '/column/ClassCI&CD/Jenkins/' },
     { text: '云效', link: '/column/ClassCI&CD/YunXiao/' },
+  ],
+  'column/ClassNode/': [
+    { text: '命令行工具', link: '/column/ClassNode/Prompts/' }
   ]
 
 }
