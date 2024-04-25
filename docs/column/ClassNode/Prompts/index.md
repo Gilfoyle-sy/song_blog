@@ -160,4 +160,21 @@ export default defineConfig(({ mode }) => {
 
 ## 仓库地址
 
+- 优化体验 支持配置项与本机 ip 匹配,若本机 IP 存在于配置项中,则前置当前的问题选项
+
+```js
+// 通过os获取本机ipv4地址
+const getCurrentIP = () => {
+  const interfaces = os.networkInterfaces()
+
+  for (const key in interfaces) {
+    for (const iface of interfaces[key]) {
+      if (iface.family === 'IPv4' && !iface.internal) {
+        return iface.address
+      }
+    }
+  }
+}
+```
+
 [Git](https://github.com/Gilfoyle-sy/song_prompts)
