@@ -45,6 +45,10 @@ export const sidebar = {
   ],
   'column/ClassNode/': [
     { text: '命令行工具', link: '/column/ClassNode/Prompts/' }
+  ],
+  'column/ClassVue/': [
+    { text: '命令行工具', link: '/column/ClassVue/AutoImportRouter/' }
+
   ]
 
 }
