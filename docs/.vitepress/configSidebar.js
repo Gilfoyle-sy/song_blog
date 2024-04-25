@@ -3,6 +3,7 @@ export const sidebar = {
     { text: 'flex', link: '/column/ClassCSS/flex' },
     { text: '尺寸', link: '/column/ClassCSS/size' },
     { text: 'sass', link: '/column/ClassCSS/sass' },
+    { text: '大屏适配', link: '/column/ClassCSS/LargeScreen/' }
   ],
   '/column/ClassJS/': [
     {
