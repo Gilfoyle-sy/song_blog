@@ -142,6 +142,8 @@ import { serverPrompts } from './prompts/index.js'
 const serverOptions = await serverPrompts()
 
 export default defineConfig(({ mode }) => {
+  // 防止build的时候提示问题
+  const serverOptions = mode === 'development' ? await serverPrompts() : {}
   return {
     // 设置配置项
     server: {

@@ -14,7 +14,7 @@
 > 在 vite.config.js 全局引入, 避免每次都在文件中引入
 
 ```scss
-@use 'sass:math';
+@use 'sass:math'; // 此处注意sass版本 1.33以上支持
 
 $designW: 1920;
 $designH: 1080;
@@ -94,3 +94,4 @@ scale 方案是等比例缩放来适配大屏,但是会有几个问题
 ## 大屏相关的库
 
 - [DataV](https://datav-vue3.jiaminghi.com/)
+- [v-scal-screen](https://github.com/Alfred-Skyblue/v-scale-screen)
