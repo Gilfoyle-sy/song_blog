@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入主页
-      link: /about/
+      link: /markdown-examples.md
     - theme: alt
       text: 关于我
       link: /about/
