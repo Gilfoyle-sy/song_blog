@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入主页
-      link: /markdown-examples
+      link: /about/
     - theme: alt
       text: 关于我
       link: /about/
@@ -20,13 +20,13 @@ hero:
     alt: logo
 
 features:
-  - title: web前端
+  - title: Html
     icon: 📖
-    details: 代码的搬运工
-  - title: 刷剧
+    details: Hyper Text Markup Language
+  - title: CSS
     icon: 🎥
-    details: 吃饭睡觉刷美剧
-  - title: 游戏
+    details: Cascading Style Sheets
+  - title: JS
     icon: 🎮
-    details: Dota2，Rimworld，Stellaris
+    details: JavaScript
 ---

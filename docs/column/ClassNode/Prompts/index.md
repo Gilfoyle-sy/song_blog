@@ -180,3 +180,11 @@ const getCurrentIP = () => {
 ```
 
 [Git](https://github.com/Gilfoyle-sy/song_prompts)
+
+## 优化
+
+这种代码引入方式比较麻烦, 因为我们在要在项目中定义一个 prompts 处理的函数, 又得在 vite.config.js 中进行引入, 并判断当前环境
+
+所以我们可以将这个函数封装进 vite 的 plugin 里,通过 plugin 的方式引入, 这样仅仅需要在 plugin 中出去配置项即可
+
+具体实现参见另一篇文章 [vite-plugin](/column/ClassVue/VitePlugin/)

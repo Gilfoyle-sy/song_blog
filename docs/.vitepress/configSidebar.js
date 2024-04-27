@@ -48,8 +48,8 @@ export const sidebar = {
     { text: '命令行工具', link: '/column/ClassNode/Prompts/' }
   ],
   'column/ClassVue/': [
-    { text: '命令行工具', link: '/column/ClassVue/AutoImportRouter/' }
-
+    { text: '动态路由导入', link: '/column/ClassVue/AutoImportRouter/' },
+    { text: 'VitePlugin', link: '/column/ClassVue/VitePlugin/' }
   ]
 
 }

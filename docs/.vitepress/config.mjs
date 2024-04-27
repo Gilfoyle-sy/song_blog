@@ -5,8 +5,8 @@ import { sidebar } from './configSidebar.js'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/song_blog/',
-  title: "个人博客",
-  description: "一个基于vitepress的个人博客站点",
+  title: "个人知识库",
+  description: "一个基于vitepress的个人知识库",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav,
