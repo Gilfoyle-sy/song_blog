@@ -3,7 +3,8 @@ export const sidebar = {
     { text: 'flex', link: '/column/ClassCSS/flex' },
     { text: '尺寸', link: '/column/ClassCSS/size' },
     { text: 'sass', link: '/column/ClassCSS/sass' },
-    { text: '大屏适配', link: '/column/ClassCSS/LargeScreen/' }
+    { text: '大屏适配', link: '/column/ClassCSS/LargeScreen/' },
+    { text: '主题切换', link: '/column/ClassCSS/ThemeSwitch/' },
   ],
   '/column/ClassJS/': [
     {
@@ -49,7 +50,8 @@ export const sidebar = {
   ],
   'column/ClassVue/': [
     { text: '动态路由导入', link: '/column/ClassVue/AutoImportRouter/' },
-    { text: 'VitePlugin', link: '/column/ClassVue/VitePlugin/' }
+    { text: 'VitePlugin', link: '/column/ClassVue/VitePlugin/' },
+    { text: '切换主题指令', link: '/column/ClassVue/Directive/' },
   ]
 
 }
