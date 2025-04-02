@@ -52,6 +52,7 @@ export const sidebar = {
     { text: '动态路由导入', link: '/column/ClassVue/AutoImportRouter/' },
     { text: 'VitePlugin', link: '/column/ClassVue/VitePlugin/' },
     { text: '切换主题指令', link: '/column/ClassVue/Directive/' },
+    { text: 'vue3新增特新', link: '/column/ClassVue/Vue3Feature/' },
   ]
 
 }
